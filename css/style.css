@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.todo {
+    background: #fff;
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: auto;
+}
+.yellow {
+    border: 15px solid #FFDC40;
+}
+.todo h1 {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.inputname {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.inputname input, li{
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 90%;
+    outline: none;
+}
+button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    margin: 20px auto;
+    background: #833ae0;
+    position: relative;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* button a {
+    height: 100%;
+    width: 45px;
+    border-radius: 70px;
+    background-color: #9953f1;
+    color: white;
+    text-decoration: none;
+} */
+button div::before {
+    text-decoration: none !important;
+    content: "+";
+    line-height: 42px;
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+}
+.d {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 45px;
+    border-radius: 70px;
+    background-color: #9953f1;
+    color: white;
+    text-decoration: none;
+}
+.d span {
+    margin-left: 32px;
+}
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.span {
+    float: right;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #C4C4C4;
+    border-radius: 100%;
+    color: #C4C4C4;
+    cursor: pointer;
+}

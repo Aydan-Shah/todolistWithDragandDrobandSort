@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo">
+            <div class="yellow"></div>
+            <h1>To Do List</h1>
+            <div class="icon" id="iconSort" onclick="sortItem()"><img src="Group 38.png" alt=""></div>
+            <div class="inputname">
+                <input type="text" id="i">
+            </div>
+           <div class="outer">
+            <ul id="ul">
+            
+            </ul>
+           </div>
+            <button onclick="newElement()" id="btn">
+                <!-- <div id="dddd" onclick="newElement()"></div> -->
+                <div class="d" onclick="return false"><span>Добавить</span></div>
+            </button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.js"></script>
+
+    <script src="js/todo.js"></script>
+</body>
+</html>
